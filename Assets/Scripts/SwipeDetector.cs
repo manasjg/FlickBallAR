@@ -26,7 +26,7 @@ public class SwipeDetector : MonoBehaviour {
             diff = endPos - startPos;
             GetComponent<Rigidbody>().isKinematic = false;
             
-            GetComponent<BallControl2>().flick();
+            GetComponent<BallControl2>().flick(diff.x,diff.y);
         }
        
        

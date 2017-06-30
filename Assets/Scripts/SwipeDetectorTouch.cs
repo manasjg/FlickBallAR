@@ -24,7 +24,7 @@ public class SwipeDetectorTouch : MonoBehaviour {
         {
             endPos = Camera.main.ScreenToWorldPoint(new Vector3(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y, -1));
             diff = endPos - startPos;
-            GetComponent<BallControl2>().flick();
+            GetComponent<BallControl2>().flick(diff.x,diff.y);
         }
        
        
